@@ -5,77 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contato - João de Cristo</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #1f1f1f, #3f3f3f);
+      background-color: #ffffff;
       font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      padding: 40px 20px;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
       min-height: 100vh;
-      color: white;
-      text-align: center;
     }
 
     .container {
-      background-color: rgba(255, 255, 255, 0.05);
+      max-width: 700px;
+      background-color: #f8f9fa;
       padding: 30px;
       border-radius: 16px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-      max-width: 600px;
-      width: 90%;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
     }
 
     h1 {
-      color: #bb86fc;
-      font-size: 2rem;
-      margin-bottom: 25px;
+      color: #1976d2;
+      margin-bottom: 30px;
+      font-size: 2.2rem;
     }
 
     p {
       font-size: 1.1rem;
-      margin: 12px 0;
-      color: #e0e0e0;
+      line-height: 1.6;
+      margin: 10px 0;
+      color: #444;
     }
 
     a {
-      color: #00e676;
+      color: #1976d2;
       text-decoration: none;
       font-weight: bold;
-    }
-
-    a:hover {
-      color: #bb86fc;
-    }
-
-    .whatsapp-button {
-      display: inline-block;
-      background-color: #25D366;
-      color: white;
-      padding: 14px 24px;
-      border-radius: 10px;
-      font-size: 1.1rem;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 20px;
       transition: 0.3s;
     }
 
-    .whatsapp-button:hover {
-      background-color: #1ebe57;
+    a:hover {
+      color: #0d47a1;
+      text-decoration: underline;
+    }
+
+    .contact-item {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
+
   <div class="container">
     <h1>📞 Contato</h1>
 
-    <p><strong>Nome:</strong> João de Cristo</p>
-    <p><strong>Email:</strong> <a href="mailto:jcwgmoreira@gmail.com">jcwgmoreira@gmail.com</a></p>
-    <p><strong>Endereço:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Borges" target="_blank">Borges (Ver no mapa)</a></p>
+    <div class="contact-item">
+      <p><strong>Nome:</strong> João de Cristo</p>
+    </div>
 
-    <a class="whatsapp-button" href="https://wa.me/qr/TTZ5QHY6TED3I1" target="_blank">📲 Falar no WhatsApp</a>
+    <div class="contact-item">
+      <p><strong>Email:</strong> <a href="mailto:jcwgmoreira@gmail.com">jcwgmoreira@gmail.com</a></p>
+    </div>
+
+    <div class="contact-item">
+      <p><strong>Telefone:</strong> <a href="tel:+5531985917348">(31) 98591-7348</a></p>
+    </div>
+
+    <div class="contact-item">
+      <p><strong>Endereço:</strong> Borges</p>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Borges" target="_blank" rel="noopener noreferrer">Ver no mapa</a></p>
+    </div>
+
+    <a href="index.html">← Voltar para o início</a>
   </div>
+
 </body>
 </html>
