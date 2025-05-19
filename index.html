@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
@@ -7,13 +7,14 @@
   <style>
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
-      background: linear-gradient(135deg, #1f1f1f, #3f3f3f);
-      font-family: 'Segoe UI', sans-serif;
-      color: white;
+      background-color: #f9f9f9;
+      font-family: 'Segoe UI', 'Roboto', sans-serif;
+      color: #333;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -22,46 +23,58 @@
     }
 
     h1 {
-      color: #00e676;
+      font-size: 2.8rem;
+      color: #1976d2;
       margin-bottom: 40px;
-      font-size: 2.5rem;
       text-align: center;
+      font-weight: bold;
     }
 
     .links {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
-      max-width: 600px;
+      gap: 30px;
+      max-width: 800px;
       width: 100%;
     }
 
     a {
-      flex: 1 1 200px;
+      flex: 1 1 220px;
       text-decoration: none;
-      color: #bb86fc;
+      color: #1976d2;
       font-size: 1.2rem;
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 15px;
+      font-weight: 600;
+      padding: 18px;
       border-radius: 12px;
       text-align: center;
-      transition: 0.3s;
+      background-color: #ffffff;
+      border: 2px solid #ddd;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     }
 
-    a:hover {
-      background-color: #00e676;
-      color: #000;
+    a:hover,
+    a:focus {
+      background-color: #1976d2;
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+      outline: none;
+    }
+
+    a:focus {
+      border-color: #1976d2;
     }
 
     @media (max-width: 500px) {
       h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
 
       a {
         font-size: 1rem;
-        padding: 12px;
+        padding: 14px;
       }
     }
   </style>
@@ -71,9 +84,9 @@
 
   <div class="links">
     <a href="sobre.html">📚 Sobre Mim</a>
-    <a href="formacao.html">📚 Formação</a>
+    <a href="formacao.html">🎓 Formação</a>
     <a href="experiencia.html">💼 Experiência</a>
-    <a href="contatoendereço.html">📞 Contato/endereço</a>
+    <a href="contatoendereço.html">📞 Contato / Endereço</a>
   </div>
 </body>
 </html>
